@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Play prediction</title>
+</head>
+<body>
+    <form action="/predict" method="POST">
+        <label>Outlook</label>
+       <select name="Outlook">
+           <option value="0">Rainy</option>
+           <option value="1">sunny</option>
+           <option value="2">Overcast</option>
+       </select><br><br><br>
+       <label>Temperature</label>
+       <select name="Temperature">
+
+
+       <option value="0">Cool</option>
+       <option value="1">Mild</option>
+       <option value="2">Hot</option>
+    </select><br><br><br>
+    <label>Humidity</label>
+    <select name="Humidity">
+     <option value="0">Normal</option>
+     <option value="1">High</option>
+    </select><br><br><br>
+    <label>Windy</label>
+    <select name="Windy">
+     <option value="0">False</option>
+     <option value="1">True</option>
+    </select><br><br><br>
+<input type="submit">
+
+
+    </form>
+    <h1> Prediction || Play  >>  Result</h1>
+    <h2>{{pred}}</h2>
+</body>
+</html>
